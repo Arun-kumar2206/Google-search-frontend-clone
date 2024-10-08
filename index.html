@@ -6,6 +6,7 @@
     <title>Google</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="nav-bar">
@@ -28,7 +29,7 @@
       </div>
     </nav>
     <div class="logo-container">
-      <picture class="main-logo">
+      <picture data-aos="zoom-in" class="main-logo">
         <img
           class="main-logo-img"
           src="images/mainlogo.png"
@@ -36,12 +37,12 @@
         />
       </picture>
     </div>
-    <div class="search-bar">
+    <div data-aos="zoom-in-down" data-aos-delay="300" class="search-bar">
       <div class="search-front">
         <img src="images/searchlogo.png" alt="" />
       </div>
       <div class="text-part">
-        <input autofocus maxlength="2048" type="text" class="text-content" />
+        <input maxlength="2048" type="text" class="text-content" />
       </div>
       <div class="search-end">
         <img src="images/google-voice.png" alt="" />
@@ -87,5 +88,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
