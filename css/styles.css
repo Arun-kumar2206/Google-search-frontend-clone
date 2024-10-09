@@ -40,7 +40,6 @@ body{
 .nav-bar a{
     text-decoration: none;
     color: #ccc;
-    
 }
 
 .nav-bar a:hover{
@@ -108,7 +107,19 @@ body{
 }
 
 .search-end img{
-    padding: 1rem;
+    padding: 0.5rem;
+    margin-right: 2px;
+    transition: all 0.3s;
+}
+.search-front img{
+    padding: 0.5rem;
+    transition: all 0.3s;
+
+}
+
+.search-front img:hover, .search-end img:hover{
+    border-radius: 100%;
+    background-color: #cccccc2f;
 }
 
 .text-content{
@@ -159,6 +170,9 @@ body{
     }
 
     .search-end img{
+        padding: 0.1rem;
+    }
+    .search-front img{
         padding: 0.1rem;
     }
 
